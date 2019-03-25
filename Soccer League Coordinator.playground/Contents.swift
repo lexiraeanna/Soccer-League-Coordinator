@@ -59,20 +59,27 @@ for player in inexperienced {
     }
 }
 // letters
+var letters: [String] = []
 
-for letters in teamDragons {
-    print("Hello, \(letters["guardians"] as! String). Your child, \(letters["name"] as! String), has been chosen to participate for the Dragons Soccer League! The first day of practice is March 17, 1pm. See you there!")
+for letter in teamDragons {
+    let letter = ("Hello, \(letter["guardians"] as! String). Your child, \(letter["name"] as! String), has been chosen to participate for the Dragons Soccer League! The first day of practice is March 17, 1pm. See you there!")
+    letters.append(letter)
 }
 
-for letters in teamSharks {
-    print("Hello, \(letters["guardians"] as! String). Your child, \(letters["name"] as! String), has been chosen to participate for the Sharks Soccer League! The first day of practice is March 17, 3pm. See you there!")
+for letter in teamSharks {
+    let letter = ("Hello, \(letter["guardians"] as! String). Your child, \(letter["name"] as! String), has been chosen to participate for the Sharks Soccer League! The first day of practice is March 17, 3pm. See you there!")
+    letters.append(letter)
 }
 
-for letters in teamRaptors {
-    print("Hello, \(letters["guardians"] as! String). Your child, \(letters["name"] as! String), has been chosen to participate for the Raptors Soccer League! The first day of practice is March 18, 1pm. See you there!")
+for letter in teamRaptors {
+    let letter = ("Hello, \(letter["guardians"] as! String). Your child, \(letter["name"] as! String), has been chosen to participate for the Raptors Soccer League! The first day of practice is March 18, 1pm. See you there!")
+    letters.append(letter)
 }
 
 
+for letter in letters {
+    print(letter)
+}
 
 
 
